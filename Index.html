@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Syrian Growth References</Title>
+        <link rel="icon" href='http://drive.google.com/uc?export=view&id=1uLXCkVYzYMShASNaMIY1z1TKjfGWFvAI'>
+        <style>
+            body{
+                margin:0px;
+                padding:0px;
+                overflow:hidden
+            }
+            #Frame{
+                overflow:hidden;
+                overflow-x:hidden;
+                overflow-y:hidden;
+                height:100%;
+                width:100%;
+                position:absolute;
+                top:0px;
+                left:0px;
+                right:0px;
+                bottom:0px
+            }
+        </style>
+    </head>
+    
+    <body>
+        <iframe id="Frame" frameborder="0" height="100%" width="100%">
+        </iframe>
+    </body>
 
+    <script>
+        var par = window.location.search;
+        document.getElementById("Frame").src = 'https://script.google.com/macros/s/XXXXXXXXXXXXXX/exec' + par
+    </script>
+</html>
