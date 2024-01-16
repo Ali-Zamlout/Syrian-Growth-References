@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<title>Syrian Growth References</title>
+	<script src="./Functions/chart.js"></script>
+	<script src="./Functions/chartjs-plugin-annotation.min.js"></script>
+	<script src="./Functions/database_Minified.js"></script>
+	<script src="./Functions/configs.js"></script>
+	<link rel="stylesheet" href="./Styles/styles.css">
+</head>
+
+<body onload="Clear()">
+	<div id="banner">
+		<span id="title">Syrian National Growth References</span>
+		<div id="headers">
+			<a href="">Calculate</a>
+			<a href="">Instructions</a>
+			<a href="">Contact</a>
+		</div>
+	</div>
+
+	<center>
+		<table cellpadding="0" cellspacing="0">
+			<thead>
+				<tr>
+					<td id="col_1">Data Entry</td>
+					<td id="col_2">Visualiztion</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<!-- Data Entry Form -->
+						<div class="Control_Panel">
+							<center>
+								<h3>Anthropometrics</h3>
+								<hr>
+								<br>
+							</center>
+							<input type="number" id="age" placeholder="Age (years)"> <br>
+							<select id="sex">
+								<option hidden="true" value="sel">-- Select Sex --</option>
+								<option value="boys">Boy</option>
+								<option value="girls">Girl</option>
+							</select> <br>
+							<input type="number" id="hgt" placeholder="Height (cm)"> <br>
+							<input type="number" id="wgt" placeholder="Weight (kg)"> <br>
+
+							 <br> <br>
+							<button onclick="Calculate()">Calculate</button>
+							<button onclick="Clear()">Clear</button>
+						</div>
+
+
+						<!-- Results Section -->
+						<div class="numeric_results">
+							<h4 onclick="changer('height')">Height for Age</h4>
+							<div class="numeric_results_span">
+								<span class="res_header_3">Height: </span>
+								<span class="res_header_4 hgt_class" id="hgt_val">13 cm</span>
+								<br>
+								<span class="res_header_3">SD Score: </span>
+								<span class="res_header_4 hgt_class" id="hgt_sds">1.36</span>
+								<br>
+								<span class="res_header_3">Percentile: </span>
+								<span class="res_header_4 hgt_class" id="hgt_cent">95.4%</span>
+								<br>
+								<span class="res_header_3">Classification: </span>
+								<span class="res_header_4 hgt_class" id="hgt_class">Tall</span>
+								<br>
+							</div>
+						</div>
+
+						<div class="numeric_results">
+							<h4 onclick="changer('weight')">Weight for Age</h4>
+							<div class="numeric_results_span">
+								<span class="res_header_3">Weight: </span>
+								<span class="res_header_4 wgt_class" id="wgt_val"></span>
+								<br>
+								<span class="res_header_3">SD Score: </span>
+								<span class="res_header_4 wgt_class" id="wgt_sds"></span>
+								<br>
+								<span class="res_header_3">Percentile: </span>
+								<span class="res_header_4 wgt_class" id="wgt_cent"></span>
+								<br>
+								<span class="res_header_3">Classification: </span>
+								<span class="res_header_4 wgt_class" id="wgt_class"></span>
+								<br>
+							</div>
+						</div>
+
+						<div class="numeric_results">
+							<h4 onclick="changer('bmi')">BMI for Age</h4>
+							<div class="numeric_results_span">
+								<span class="res_header_3">BMI: </span>
+								<span class="res_header_4 bmi_class" id="bmi_val"></span>
+								<br>
+								<span class="res_header_3">SD Score: </span>
+								<span class="res_header_4 bmi_class" id="bmi_sds"></span>
+								<br>
+								<span class="res_header_3">Percentile: </span>
+								<span class="res_header_4 bmi_class" id="bmi_cent"></span>
+								<br>
+								<span class="res_header_3">Classification: </span>
+								<span class="res_header_4 bmi_class" id="bmi_class"></span>
+								<br>
+							</div>
+						</div>
+
+					</td>
+					<td>
+						<div id="chart_container">
+							<canvas id="myChart"></canvas>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<div id="footer">
+							<hr>
+							<span id="info">
+								Dr. <b>Ali Zamlout</b> <br>
+								MD. Pediatric Surgery <br>
+								Tishreen University Hospital <br>
+								<b>ali.zamlout.96@gmail.com</b> <br>
+							</span>
+
+							<span id="reference">
+								<b>Syrian National Growth References for Children and Adolescents aged 2-20 years</b>
+								<br>
+								<b>BMC Pediatrics </b> 22, 282 (2022) <br>
+								<b>DOI: </b> doi.org/10.1186/s12887-022-03331-0 <br>
+								Zamlout, A., Alwannous, K., Kahila, A. et al.
+							</span>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+
+<script src="./Functions/func.js"></script>
+<script src="./Functions/charter.js"></script>
+<script>
+	var TYPE;
+</script>
+</html>
