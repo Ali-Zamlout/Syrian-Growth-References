@@ -5,11 +5,11 @@ Visit the webapp for free at the following url: [https://ali-zamlout.github.io/S
 
   
 ### Background & Methodologies
-The LMS method (Lambda-Mu-Sigma) was developed by Cole and Green to create centile curves for a response variable (e.g. height) against a single explanatory variable (e.g. age), assuming that the response variable follows Box-Cox Cole and Green distribution, and a truncated standard normal distribution after Box-Cox power transformation. Rigby and Stasinopoulos generalized the LMS method to accommodate for kurtosis by introducing the Box-Cox Power Exponential and Box-Cox T distributions within the frame of GAMLSS. The syrian growth references were established using the _Box-Cox T_ distribution for height-for-age and the _Box-Cox Power Exponential_ distribution for weight-for-age and BMI-for-age.  
+The LMS method (Lambda-Mu-Sigma) was developed by Cole and Green to create centile curves for a response variable (e.g. height) against a single explanatory variable (e.g. age), assuming that the response variable follows Box-Cox Cole and Green distribution, and a truncated standard normal distribution after Box-Cox power transformation. Rigby and Stasinopoulos generalized the LMS method to accommodate for kurtosis by introducing the Box-Cox Power Exponential and Box-Cox T distributions within the frame of GAMLSS. The Syrian National Growth References were established using the _Box-Cox T_ distribution for height-for-age and the _Box-Cox Power Exponential_ distribution for weight-for-age and BMI-for-age.  
 
   
 ### Features
-- Calculate percentile and SD score corresponding to height-for-age, weight-for-age, and BMI-for-age anthropometric measurments.
+- Calculate percentile and SD score corresponding to height, weight, and BMI anthropometric measurments.
 - Visualize the child's anthropometries on interactive growth charts.
 - Easy implementation of growth standards with automatic calculation and classification.
 
