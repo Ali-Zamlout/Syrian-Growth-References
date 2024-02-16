@@ -19,6 +19,12 @@ The LMS method (Lambda-Mu-Sigma) was developed by Cole and Green to create centi
 2. Click on the "Calculate" button to obtain the corresponding percentile and SD score.
 3. Click on the headings to view the interactive charts for height-for-age, weight-for-age, and BMI-for-age.
 
+
+### How To Cite
+This project is the result of tremendous efforts and dedication. Please acknowledge these efforts by citing the original research paper when using the Webapp or study results. You can use the following citation for that purpose:  
+
+"_Zamlout, A., Alwannous, K., Kahila, A. et al. Syrian national growth references for children and adolescents aged 2–20 years. BMC Pediatr 22, 282 (2022). https://doi.org/10.1186/s12887-022-03331-0_"
+
   
 ### References
 - Cole TJ, Green PJ. Smoothing reference centile curves: the LMS method and penalized likelihood. Stat Med. 1992;11(10):1305–19.
@@ -27,7 +33,5 @@ The LMS method (Lambda-Mu-Sigma) was developed by Cole and Green to create centi
 
   
 
-
-  
-  
+### Feedback
 Feel free to contribute or provide feedback!
